@@ -1,0 +1,27 @@
+<ion-card>
+  <ion-card-header>
+    <ion-card-title>Resident Evil Survival Horror - Registro</ion-card-title>
+    <ion-card-subtitle>Registro</ion-card-subtitle>
+  </ion-card-header>
+
+  <ion-card-content>
+    ¡Crea una cuenta gratis y únete al mundo del survival horror!
+  </ion-card-content>
+
+  <ion-input label="Nombre de Usuario" label-placement="floating" fill="outline" placeholder="Entre 3 y 20 caracteres" [(ngModel)]="data.nombreUsuario"></ion-input>
+
+  <br />
+
+  <ion-input label="Contraseña" label-placement="floating" fill="outline" placeholder="Al menos 8 caracteres y mínimo una mayúscula" [(ngModel)]="data.contrasena"></ion-input>
+
+  <br />
+
+  <ion-input label="Confirmar contraseña" label-placement="floating" fill="outline" placeholder="Contraseña anterior" [(ngModel)]="data.conContrasena"></ion-input>
+
+  <br />
+  
+  <ion-input label="Correo Electronico" label-placement="floating" fill="outline" placeholder="Debe contener @ y .com" [(ngModel)]="data.correo"></ion-input>
+
+  <ion-button fill="clear" (click)="aceptar()">Aceptar</ion-button>
+  <ion-button fill="clear">Atras</ion-button>
+</ion-card>

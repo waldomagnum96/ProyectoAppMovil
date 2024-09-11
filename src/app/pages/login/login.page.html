@@ -1,0 +1,19 @@
+
+<ion-content [fullscreen]="true">
+  <div class="inicio-img"><img class="img1" src="../../../assets/img/umb.png" alt="umbrella"></div>
+  
+  <div class="inicio-cont">
+   
+    <div class="inicio-fondo">
+      <h3 class="inicio-titulo">Inicio</h3>
+      <ion-input class="custom-input" label="Usuario" labelPlacement="floating" [(ngModel)]="login.usuario"></ion-input>
+    
+      <ion-input class="custom-input" label="Contraseña" labelPlacement="floating" type="password" [(ngModel)]="login.password"></ion-input>
+    
+      <ion-button shape (click) ="ingresar()">Ingresar</ion-button>
+      <ion-button fill="clear" [routerLink] ="['/registrarse']">Registrarse</ion-button>  
+      <ion-button fill="clear" [routerLink] ="['/restablecer']">Restablecer contraseña</ion-button>
+    </div>
+  </div>
+        
+</ion-content>
