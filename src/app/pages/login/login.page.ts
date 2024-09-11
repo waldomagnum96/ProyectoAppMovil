@@ -8,7 +8,7 @@ import { ToastController } from '@ionic/angular';
   styleUrls: ['./login.page.scss'],
 })
 export class LoginPage implements OnInit {
-  // relacionado con ngmodel para obtener inputs del login
+  // relacionado con ngmodel para obtener inputs del login (validar)
   login:any={
     usuario:"",
     password:""
