@@ -15,14 +15,14 @@ ion-content{
 }
 
 .example-card {
-    --height: 100px;
-    --width: 350% !important;
+    max-width: 350px;
     background-color: rgb(0, 0, 0);
     border-color: rgb(255, 255, 255);
     margin-top: 20px;
     margin-bottom: 20px;
     margin-left: 30px;
     margin-right: 30px;
+    flex-shrink: 0;
     
     p{
             color: rgb(255, 255, 255);
@@ -51,26 +51,4 @@ ion-content{
 .color-header{
     --background: #000000d5; /* Color negro */
   --color: white; /* Texto en blanco */
-}
-
-.imgre1{
-    width: 850px;
-}
-
-.tamaño-tarjeta{
-    width: 300px; /* Estirar a los lados */
-    height: 470px; /* Estirar para abajo */
-    border-radius: 15px; /* modificar los bordes */
-    background-color: rgb(0, 0, 0);
-    border-color: rgb(255, 255, 255) !important;
-}
-
-.color-texto{
-    color: white;
-    padding: 20px 0px 0px 20px; /* | arriba  derecha  abajo || izquierda | */
-}
-
-.imagenes-tamaño{
-    width: auto; /* Estirar a los lados */
-    height: auto;
 }
