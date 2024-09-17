@@ -10,9 +10,9 @@
     
       <ion-input class="custom-input" label="Contraseña" labelPlacement="floating" type="password" [(ngModel)]="login.password"></ion-input>
     
-      <ion-button shape (click) ="ingresar()">Ingresar</ion-button>
-      <ion-button fill="clear" [routerLink] ="['/registrarse']">Registrarse</ion-button>  
-      <ion-button fill="clear" [routerLink] ="['/restablecer']">Restablecer contraseña</ion-button>
+      <ion-button class="boton-ingresar" fill="clear" shape (click) ="ingresar()">Ingresar</ion-button>
+      <ion-button class="boton-registrarse" fill="clear" [routerLink] ="['/registrarse']">Registrarse</ion-button>  
+      <ion-button class="boton-recuperar" fill="clear" [routerLink] ="['/restablecer']">Recuperar contraseña</ion-button>
     </div>
   </div>
         

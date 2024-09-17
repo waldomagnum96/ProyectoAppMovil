@@ -1,8 +1,12 @@
 <ion-header [translucent]="true">
   <ion-toolbar class="color-header">
-    <ion-title>
-      Bienvenido/a {{login.usuario}}
-    </ion-title>
+    <div class="alinear-botones">
+      <ion-title>
+        Bienvenido/a {{login.usuario}}
+      </ion-title>
+      <ion-button class="boton-inicio" fill="clear" [routerLink] ="['/login']">Inicio</ion-button>
+    </div>
+    
   </ion-toolbar>
 </ion-header>
 
@@ -10,6 +14,28 @@
   <div>
     <img class="raccon-font" src="../../../assets/img/racconcityfont.png" alt="racconcity">
   </div>
+
+  <div class="audio-container">
+    <!-- Botón para controlar el audio -->
+    <ion-button (click)="toggleAudio()" expand="block" fill="clear">
+      {{ isPlaying ? 'Pausar' : 'Reproducir' }} Audio
+    </ion-button>
+  </div>
+
+  <!-- Aquí va el resto del contenido de la página -->
+
+  <!-- Audio de fondo (no visible) -->
+  <audio #backgroundAudio>
+    <source src="../../../assets/audio/08 - The Front Hall.mp3" type="audio/mpeg">
+    Tu navegador no soporta audio.
+  </audio>
+
+
+
+
+
+
+
   <h3 class="juegos-titulo">Juegos</h3>
   <div class="slide-in-blurred-left">
     <mat-card class="example-card" appearance="outlined">
