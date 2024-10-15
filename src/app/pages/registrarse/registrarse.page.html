@@ -26,17 +26,3 @@
   <ion-button fill="clear">Atras</ion-button>
 </ion-card>
 
-<div class="audio-container">
-  <!-- Botón para controlar el audio -->
-  <ion-button (click)="toggleAudio()" expand="block">
-    {{ isPlaying ? 'Pausar' : 'Reproducir' }} Audio
-  </ion-button>
-</div>
-
-<!-- Aquí va el resto del contenido de la página -->
-
-<!-- Audio de fondo (no visible) -->
-<audio #backgroundAudio>
-  <source src="../../../assets/audio/08 - The Front Hall.mp3" type="audio/mpeg">
-  Tu navegador no soporta audio.
-</audio>

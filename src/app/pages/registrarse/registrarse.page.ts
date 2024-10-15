@@ -1,4 +1,4 @@
-import { Component, OnInit, ViewChild } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { AlertController } from '@ionic/angular';
 
 
@@ -16,9 +16,7 @@ export class RegistrarsePage implements OnInit {
     correo:""
   
   };
-  @ViewChild('backgroundAudio')  backgroundAudio: any;
-  isPlaying: boolean = false; // Estado de reproducción
-
+  
 
 
 
@@ -26,17 +24,7 @@ export class RegistrarsePage implements OnInit {
 
   constructor(public alertController:AlertController) { }
 
-  toggleAudio() {
-    const audio = this.backgroundAudio.nativeElement;
-    
-    if (this.isPlaying) {
-      audio.pause(); // Pausa el audio
-    } else {
-      audio.play(); // Reproduce el audio
-    }
-
-    this.isPlaying = !this.isPlaying; // Cambia el estado de reproducción
-  }
+  
 
 
 

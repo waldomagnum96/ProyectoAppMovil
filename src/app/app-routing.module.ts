@@ -35,6 +35,10 @@ const routes: Routes = [
     path: 'residentevilzero',
     loadChildren: () => import('./pages/residentevilzero/residentevilzero.module').then( m => m.ResidentevilzeroPageModule)
   },
+  {
+    path: 'registrar',
+    loadChildren: () => import('./pages/registrar/registrar.module').then( m => m.RegistrarPageModule)
+  },
 ];
 
 @NgModule({
