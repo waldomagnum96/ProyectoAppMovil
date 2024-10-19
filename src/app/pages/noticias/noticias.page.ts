@@ -18,6 +18,18 @@ export class NoticiasPage implements OnInit {
 
   constructor(private dbService: DbserviceService) { }
 
+   // Nueva función para eliminar noticia
+   eliminarNoticia(noticias: any) {
+    // Primero la elimina de la base de datos
+    this.dbService.deleteNoticia(noticias.id).then(() => {
+      // Luego la eliminamos del arreglo local
+      this.noticias = this.noticias.filter((item: any) => item.id !== noticias.id);
+    }).catch((error) => {
+      console.error("Error eliminando la noticia: ", error);
+    });
+  }
+ 
+
   ngOnInit() {
     this.dbService.dbState().subscribe((res: any)=>{
       if (res) {

@@ -1,6 +1,10 @@
 <ion-header [translucent]="true">
   <ion-toolbar class="color-header">
-    <ion-title>Sección Bonus</ion-title>
+    <div class="alinear-botones">
+      <ion-title>Sección Bonus</ion-title>
+      <ion-button class="boton-ir-a-registrar" fill="clear" [routerLink] ="['/noticias']">Noticias</ion-button>
+    </div>
+    
   </ion-toolbar>
 </ion-header>
 
@@ -209,6 +213,6 @@
     </mat-card>
   </div>
 
-  <ion-button class="boton-ir-a-registrar" fill="clear" [routerLink] ="['/registrar']">Rgistrar Noticia</ion-button>
+  
   
 </ion-content>
