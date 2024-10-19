@@ -20,6 +20,6 @@ export class RegistrarPage implements OnInit {
   guardar(){
     this.dbService.addNoticia(this.tituloNoticia,this.textoNoticia);
     this.dbService.presentToast("Noticia Agregada");
-    this.router.navigate(['/home']);
+    this.router.navigate(['/noticias']);
   }
 }
