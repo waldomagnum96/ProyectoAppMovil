@@ -47,6 +47,10 @@ const routes: Routes = [
     path: 'modificar',
     loadChildren: () => import('./pages/modificar/modificar.module').then( m => m.ModificarPageModule)
   },
+  {
+    path: 'testeoapi',
+    loadChildren: () => import('./pages/testeoapi/testeoapi.module').then( m => m.TesteoapiPageModule)
+  },
 ];
 
 @NgModule({
