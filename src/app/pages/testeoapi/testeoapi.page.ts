@@ -21,6 +21,8 @@ export class TesteoapiPage implements OnInit {
   constructor( private serviceAPI: ServicerestService) { }
 
   ngOnInit() {
+    this.getStudentList();
+    this.getPostList();
 
   }
 

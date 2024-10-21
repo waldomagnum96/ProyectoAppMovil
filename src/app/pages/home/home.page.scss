@@ -83,11 +83,34 @@ ion-content{
         justify-content: space-between;
 }
 
+
 .audio-container {
-        display: flex;
-        justify-content: center;
-        margin-top: 20px;
-      }
+        display: flex; /* Activar el uso de flexbox */
+        justify-content: center; /* Centrar el contenido horizontalmente */
+        font-size: 20px; /* Tamaño de la fuente del icono */
+        padding: 10px; /* Padding del botón */
+        margin: 10px; /* Margen alrededor del botón */
+}
+      
+.audio-button {
+        --background: #333 !important; /* Fondo gris oscuro */
+        --color: white !important; /* Color del texto/icono */
+        border-radius: 50px !important; /* Bordes redondeados para que sea circular */
+        width: 60px !important; /* Ancho del botón (ajústalo según lo necesites) */
+        height: 60px !important; /* Altura del botón igual al ancho para que sea circular */
+        display: flex; /* Activar el uso de flexbox para centrar el icono */
+        align-items: center; /* Centrar verticalmente el icono */
+        justify-content: center; /* Centrar horizontalmente el icono */
+        transition: background-color 0.3s; /* Transición suave al cambiar de color */
+        padding: 0 !important; /* Eliminar el padding predeterminado */
+}
+      
+.audio-button:hover {
+        --background: #444 !important; /* Color ligeramente más claro al pasar el ratón */
+}
+
+
+
 
 .slide-in-blurred-left {
 	-webkit-animation: slide-in-blurred-left 0.6s cubic-bezier(0.230, 1.000, 0.320, 1.000) both;

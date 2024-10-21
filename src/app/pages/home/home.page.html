@@ -16,9 +16,10 @@
   </div>
 
   <div class="audio-container">
-    <!-- Botón para controlar el audio -->
-    <ion-button (click)="toggleAudio()" expand="block" fill="clear">
-      {{ isPlaying ? 'Pausar' : 'Reproducir' }} Audio
+    <!-- Contenedor para el botón de audio -->
+    <ion-button (click)="toggleAudio()" expand="full" fill="solid" class="audio-button">
+      <ion-icon *ngIf="isPlaying" name="volume-mute"></ion-icon>
+      <ion-icon *ngIf="!isPlaying" name="musical-notes"></ion-icon>
     </ion-button>
   </div>
 

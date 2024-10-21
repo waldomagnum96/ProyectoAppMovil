@@ -14,8 +14,8 @@ import { ServicerestService } from './services/servicerest.service';
 
 @NgModule({
   declarations: [AppComponent],
-  imports: [HttpClientModule,BrowserModule, IonicModule.forRoot(), AppRoutingModule, BrowserAnimationsModule],
-  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }, provideAnimationsAsync(),SQLite,ServicerestService],
+  imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule, BrowserAnimationsModule,HttpClientModule,],
+  providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }, provideAnimationsAsync(),SQLite,ServicerestService,],
   bootstrap: [AppComponent],
   
 })
